@@ -48,6 +48,25 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+
+<style>
+.gallery {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+  }
+  .gallery-item {
+      margin: 20px;
+  }
+  .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+  }
+  .caption {
+      margin-top: 5px;
+  }
+    </style>
 </head>
 <body>
 
@@ -58,8 +77,8 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Security of AI-enabled Medical Systems</h1>
-            <!-- <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+          <!-- <div class="is-size-5 publication-authors">
+              <Paper authors -->
               <!-- <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Mohammed Elnawawy</a>,</span>
                 <span class="author-block">
@@ -68,20 +87,20 @@
                 <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Gargi Mitra</a>,</span>
                 <span class="author-block">
                 <a href="ADVISOR PERSONAL LINK" target="_blank">Karthik Pattabiraman</a>
-                  </span>
-                  </div> -->
+                  </span> -->
+                  <!-- </div> -->
 
-                  <div class="is-size-5 publication-authors">
+                  <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Dependable Systems Lab (UBC Vancouver), National Research Council Canada</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  <!-- </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
 
                       <!-- Team link -->
                    <span class="link-block">
-                     <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                     <a href="#team"
                      class="external-link button is-normal is-rounded is-dark">
                      <span class="icon">
                        <i class="fas fa-people-carry"></i>
@@ -92,7 +111,7 @@
 
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://www.dropbox.com/scl/fi/fc9mrs4o2i5cumuu4s4oy/CHASE24_CameraReady.pdf?rlkey=b5spjm4od63q4ft98vaaoceh5&e=1&dl=0" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -102,7 +121,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -110,11 +129,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/shekoelnawawy/URET_OHIO.git" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -125,7 +144,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/pdf/2401.17136" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -172,7 +191,7 @@
         <h2 class="title is-3">The Story</h2>
         <div class="content has-text-justified">
           <p>
-          From diagnosing patients to surgical assistance, Artificial Intelligence is now seen as a game-changer in various medical disciplines. As of December 2023, the FDA has approved 692 AI/ML-enabled devices for commercial use, and the number keeps going up every year. We set out to investigate how secure these devices are from various cyber threats. In this process, we started looking for answers to the following crucial questions.
+          From diagnosing patients to surgical assistance, Artificial Intelligence is now seen as a game-changer in various medical disciplines. As of June 224, the FDA has approved 882 AI/ML-enabled devices for commercial use, and the number keeps going up every year. However, our studies show that for ~75% of these devices, the FDA pre-market summaries do not contain any mention of security risk assessment. Around 22% of them perform device-specific assessments, which, as we eventually discover, are inadequate. On this research journey, we set out to investigate how secure these devices are from various cyber threats. In this process, we started looking for answers to the following crucial questions.
           <ol>
             <li>Do the manufacturers of the AI-enabled devices implement any security measure? If so, what are they, and how do they assess the security risks to the devices they design?</li>
             <li>The AI-enabled devices need to be interfaced with various other medical and non-medical peripheral devices (manufactured by different vendors) at deployment. Can any of these peripherals pose a threat to the security of the ML engine?</li>
@@ -188,10 +207,57 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+      <div class="column is-full">
+        <h2 class="title is-3">The Team</h2>
+        <div id="team" class="gallery">
+            <div class="gallery-item">
+                <img src="static/images/nawawy.jpg" alt="Image 1">
+                <div class="caption"><b>Mohammed Elnawawy</b></div>
+                <div class="caption">(PhD Student, Dept of ECE, UBC)</div>
+                <div class="caption">Email: mnawawy@ece.ubc.ca</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/mohammadreza.jpeg" alt="Image 2">
+                <div class="caption"><b>Mohammadreza Hallajiyan</b></div>
+                <div class="caption">(MaSc Student, Dept of ECE, UBC)</div>
+                <div class="caption">Email: hallaj@ece.ubc.ca</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/gargi.jpeg" alt="Image 3">
+                <div class="caption"><b>Gargi Mitra</b></div>
+                <div class="caption">(Postdoctoral Fellow, Dept of ECE, UBC)</div>
+                <div class="caption">Email: gargi@ece.ubc.ca</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/shahrear.jpg" alt="Image 4">
+                <div class="caption"><b>Shahrear Iqbal</b></div>
+                <div class="caption">(Research Officer, National Research Council, Canada)</div>
+                <div class="caption">Email: shahrear.iqbal@nrc-cnrc.gc.ca</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/karthik.jpg" alt="Image 5">
+                <div class="caption"><b>Karthik Pattabiraman</b></div>
+                <div class="caption">(Professor, Dept of ECE, UBC)</div>
+                <div class="caption">Email: karthikp@ece.ubc.ca</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
 <!-- Image carousel -->
 <!-- Gargi: Commenting starts here -->
-<!-- <section class="hero is-small">
+ <!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
