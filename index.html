@@ -66,7 +66,19 @@
   .caption {
       margin-top: 5px;
   }
-    </style>
+  .marquee {
+            background-color: yellow;
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+            white-space: nowrap;
+  }
+  .marquee a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+  }
+  </style>
 </head>
 <body>
 
@@ -181,6 +193,9 @@
       </h2>
     </div>
   </div>
+  <marquee class="marquee" behavior="scroll" direction="left">
+    Check out our latest paper titled <a href="https://www.dropbox.com/scl/fi/x2wbf2fn2yo9qp8reosy2/HealthSec24_SAM_Mohammadreza.pdf?rlkey=v2l25kiqimuv6whgoeau0ya87&e=2&st=lp228vq6&dl=0" target="_blank">"SAM: Foreseeing Inference-Time False Data Injection Attacks onML-enabled Medical Devices"</a>, accepted and to be presented at HealthSec 2024, a workshop co-located with ACM CCS 2024, on October 14, 2024! <a href="https://www.example.com">this link</a>!
+</marquee>
 </section>
 <!-- End teaser video -->
 
@@ -193,7 +208,7 @@
         <h2 class="title is-3">The Story</h2>
         <div class="content has-text-justified">
           <p>
-          From diagnosing patients to surgical assistance, Artificial Intelligence is now seen as a game-changer in various medical disciplines. As of June 224, the FDA has approved 882 AI/ML-enabled devices for commercial use, and the number keeps going up every year. However, our studies show that for ~75% of these devices, the FDA pre-market summaries do not contain any mention of security risk assessment. Around 22% of them perform device-specific assessments, which, as we eventually discover, are inadequate. On this research journey, we set out to investigate how secure these devices are from various cyber threats. In this process, we started looking for answers to the following crucial questions.
+          From diagnosing patients to surgical assistance, Artificial Intelligence is now seen as a game-changer in various medical disciplines. <a href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices">As of October 2024, the FDA has approved 950 AI/ML-enabled devices</a> for commercial use, and the number keeps growing every year. However, our studies show that for ~75% of these devices, the FDA pre-market summaries do not contain any mention of security risk assessment. Around 22% of them perform device-specific assessments, which, as we eventually discover, are inadequate. On this research journey, we set out to investigate how secure these devices are from various known cyber threats. In this process, we started looking for answers to the following crucial questions.
           <ol>
             <li>Do the manufacturers of the AI-enabled devices implement any security measure? If so, what are they, and how do they assess the security risks to the devices they design?</li>
             <li>The AI-enabled devices need to be interfaced with various other medical and non-medical peripheral devices (manufactured by different vendors) at deployment. Can any of these peripherals pose a threat to the security of the ML engine?</li>
